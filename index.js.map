@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/js/pixabay-api.js","../src/js/render-functions.js"],"sourcesContent":["console.log(\"Pixabay API initialized\");\n","console.log('Render functions initialized');\n"],"names":[],"mappings":"ssBAAA,QAAQ,IAAI,yBAAyB,ECArC,QAAQ,IAAI,8BAA8B"}
