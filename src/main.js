@@ -6,8 +6,6 @@ import {
   showLoader,
   hideLoader,
 } from './js/render-functions.js';
-// import css-loader from 'css-loader';
-
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
@@ -41,13 +39,17 @@ form.addEventListener('submit', e => {
           message:
             'Sorry, there are no images matching your search query. Please try again!',
           position: 'topRight',
-          color: '#ec4343ff',
+          color: '#98a8d4ff',
           icon: false,
         });
       }
     })
-    .catch(error => {
-      console.log(error);
+    .catch(() => {
+      iziToast.error({
+        message: 'Error fetching images. Please try again later.',
+        position: 'topRight',
+        icon: false,
+      });
     })
     .finally(() => {
       hideLoader();
