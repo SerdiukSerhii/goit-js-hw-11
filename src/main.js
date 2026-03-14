@@ -1,3 +1,4 @@
+import './css/css-loader.css';
 import { getImagesByQuery } from './js/pixabay-api';
 import {
   createGallery,
@@ -5,6 +6,7 @@ import {
   showLoader,
   hideLoader,
 } from './js/render-functions.js';
+// import css-loader from 'css-loader';
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -45,7 +47,7 @@ form.addEventListener('submit', e => {
       }
     })
     .catch(error => {
-         console.log(error);
+      console.log(error);
     })
     .finally(() => {
       hideLoader();
