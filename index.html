@@ -6,8 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-js-hw-11</title>
     <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-BDPjZNE_.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-DumFYO8Z.css">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-D0BSVcep.css">
   </head>
   <body>
+    <main>
+      <div class="container">
+        <form class="form js-form">
+          <label>
+            <input
+              type="text"
+              name="search-text"
+              placeholder="Search images..."
+              required
+            />
+          </label>
+          <button class="js-btn-search" type="submit">Search</button>
+        </form>
+        <ul class="gallery js-gallery"></ul>
+      </div>
+      <div class="loader hidden"></div>
+    </main>
   </body>
 </html>
