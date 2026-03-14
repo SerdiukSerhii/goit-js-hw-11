@@ -1,14 +1,12 @@
 import axios from 'axios';
 
-const API_KEY = import.meta.env.VITE_PIXABAY_KEY;
-
 axios.defaults.baseURL = 'https://pixabay.com';
 
 export function getImagesByQuery(query) {
   return axios
     .get('/api/', {
       params: {
-        key: API_KEY,
+        key: '55023581-b8ae6332fd3af068fbd1cd850',
         q: query,
         image_type: 'photo',
         orientation: 'horizontal',
@@ -18,5 +16,3 @@ export function getImagesByQuery(query) {
     })
     .then(response => response.data);
 }
-
-console.log('API KEY:', API_KEY);
