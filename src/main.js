@@ -57,3 +57,6 @@ form.addEventListener('submit', e => {
 
   form.reset();
 });
+
+console.log(import.meta.env.VITE_PIXABAY_KEY);
+console.log('ENV:', import.meta.env);
